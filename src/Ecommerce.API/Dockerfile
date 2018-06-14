@@ -1,8 +1,9 @@
-FROM microsoft/aspnetcore:2.0-nanoserver-1709 AS base
+FROM microsoft/dotnet:2.1-aspnetcore-runtime-nanoserver-1709 AS base
 WORKDIR /app
-EXPOSE 80
+EXPOSE 58858
+EXPOSE 44356
 
-FROM microsoft/aspnetcore-build:2.0-nanoserver-1709 AS build
+FROM microsoft/dotnet:2.1-sdk-nanoserver-1709 AS build
 WORKDIR /src
 COPY src/Ecommerce.API/Ecommerce.API.csproj src/Ecommerce.API/
 RUN dotnet restore src/Ecommerce.API/Ecommerce.API.csproj
