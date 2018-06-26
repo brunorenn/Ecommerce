@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  ecommerce.api:
-    image: ${DOCKER_REGISTRY}ecommerceapi
+  catalog.api:
+    image: ${DOCKER_REGISTRY}catalogapi
     build:
       context: .
-      dockerfile: src\Ecommerce.API\Dockerfile
+      dockerfile: src\Catalog\Catalog.API\Dockerfile

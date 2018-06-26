@@ -3,10 +3,10 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Windows</DockerTargetOS>
-    <ProjectGuid>70fce1fe-9782-4086-90b9-990b16d50f96</ProjectGuid>
+    <ProjectGuid>4bdf3226-a835-4c3d-a968-4a766f71525b</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://{ServiceIPAddress}{ServicePort}/api/values</DockerServiceUrl>
-    <DockerServiceName>ecommerce.api</DockerServiceName>
+    <DockerServiceName>catalog.api</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
