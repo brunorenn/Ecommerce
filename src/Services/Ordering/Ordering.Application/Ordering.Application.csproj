@@ -2,8 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>EventBus</AssemblyName>
-    <RootNamespace>Ecommerce.EventBus</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="CommandSide\" />
+    <Folder Include="QuerySide\" />
+  </ItemGroup>
 
 </Project>
